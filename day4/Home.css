@@ -1,0 +1,197 @@
+/* Home.css */
+
+.home-container {
+  
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.navbar-side-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-link i {
+  margin-right: 10px;
+}
+
+.navbar-link:hover {
+  background-color: #1a83ff;
+  color: #fff;
+}
+
+.navbar-link:hover i {
+  /* Add additional styles for the icon when hovering */
+  /* Example: */
+  color: #ff0000;
+  /* You can adjust the color or add other styles as per your preference */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggle {
+  margin-right: auto;
+}
+
+.navbar-search input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.navbar-user-icon img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sign-out-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff3333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Animation for sliding the side panel */
+.navbar-side-panel {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+
+.side-panel-open .navbar-side-panel {
+  transform: translateX(0);
+  top: 76px;
+}
+
+.side-panel-closed .navbar-side-panel {
+  transform: translateX(-100%);
+  top: 76px;
+}
+
+@media (max-width: 768px) {
+  .navbar-side-panel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+h3 {
+  /* Responsiveness for h3 */
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+/* Additional styles for the side panel links */
+.navbar-side-panel .navbar-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+ 
+}
+
+.navbar-side-panel .navbar-link:hover {
+  background-color: #1a83ff;
+  color: #fff;
+}
+
+.navbar-side-panel .navbar-link:hover i {
+  /* Add additional styles for the icon when hovering */
+  /* Example: */
+  color: #ff0000;
+  /* You can adjust the color or add other styles as per your preference */
+}
+
