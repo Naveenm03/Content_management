@@ -1,0 +1,13 @@
+.sidebarBox{
+    position: sticky;
+    top: 0px;
+}
+
+.postsBox{
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.custom-background {
+    background-color: #000000; /* Replace with your desired color */
+  }
