@@ -67,10 +67,4 @@ The Content Management Website offers a user-friendly interface for content crea
 - Explore the available content creation and management functionalities.
 - Create, edit, and publish content as needed, and manage user roles and permissions accordingly.
 
-## Contributors
 
-- [Your Name](https://github.com/your_username)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
